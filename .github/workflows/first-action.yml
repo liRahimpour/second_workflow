@@ -1,0 +1,14 @@
+name: test
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout
+      - name: Install NodeJs
+        uses: actions/setup-node
+      - name: install dependencies
+        run: npm ci
+      - name: Run Tests
+        run: npm test
