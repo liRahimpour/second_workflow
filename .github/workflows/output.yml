@@ -1,5 +1,5 @@
 name: output info
-on: workflow_dispatch
+on: push
 jobs:
   info:
     runs-on: ubuntu-latest
