@@ -12,13 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      JAVA_VERSION: "21" # Job-Level env
-      SPRING_VERSION: "2.7.12"
+      JAVA_VERSION: 21 # Job-Level env
+      SPRING_VERSION: 2.7.12
 
     steps:
       - name: Print variables
         env:
-          STEP_MESSAGE: "hier werden variablen aus alles levels ausgegegebn" # Step-Level env
+          STEP_MESSAGE: hier werden variablen aus alles levels ausgegegebn # Step-Level env
 
         run: |
           echo "App: $APP_NAME"
