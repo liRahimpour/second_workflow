@@ -29,5 +29,5 @@ jobs:
 
       - name: ausserhalb_vorherige_step
         run: |
-          echo "nichtgezeigt: $STEP_MESSAGE"
+          echo "nichtgezeigt: $APP_NAME"
       
