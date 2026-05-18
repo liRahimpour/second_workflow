@@ -1,7 +1,7 @@
 name: Env Example
 
 on:
-  workflow_dispatch:
+  push:
 
 env:
   APP_NAME: spring-app   # Top-Level env
