@@ -1,12 +1,29 @@
-name: Nightly Build
+name: Env Example
 
 on:
-  schedule:
-    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+env:
+  APP_NAME: spring-app   # Top-Level env
+  AUTHOR: John Doe
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    env:
+      JAVA_VERSION: "21" # Job-Level env
+      SPRING_VERSION: "2.7.12"
+
     steps:
-      - run: echo "Scheduled run at $(date)"
-      - run: echo "Running nightly build at $(date)"
+      - name: Print variables
+        env:
+          STEP_MESSAGE: "hier werden variablen aus alles levels ausgegegebn" # Step-Level env
+
+        run: |
+          echo "App: $APP_NAME"
+          echo "Java: $JAVA_VERSION"
+          echo "Message: $STEP_MESSAGE" at $(date)"
+          echo "Author: $AUTHOR"
+          echo "Spring Version: $SPRING_VERSION"
+          echo "Current Date: $(date)"
