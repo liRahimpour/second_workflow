@@ -4,8 +4,8 @@ on:
   push:
 
 env:
-  APP_NAME: spring-app   # Top-Level env
-  AUTHOR: John Doe
+  APP_NAME: "spring-app"   # Top-Level env
+  AUTHOR: "John Doe"
 
 jobs:
   build:
