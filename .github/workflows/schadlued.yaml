@@ -1,0 +1,11 @@
+name: Nightly Build
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Scheduled run"
