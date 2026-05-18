@@ -13,5 +13,6 @@ jobs:
             --output dataset.json \
             dataset.json.gpg
           ls
+          cat dataset.json
         env:
           DATASET_PASSPHRASE: ${{secrets.DATASET_PASSPHRASE}}
