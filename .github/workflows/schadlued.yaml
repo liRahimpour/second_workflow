@@ -23,7 +23,7 @@ jobs:
         run: |
           echo "App: $APP_NAME"
           echo "Java: $JAVA_VERSION"
-          echo "Message: $STEP_MESSAGE" at $(date)"
+          echo "Message: $STEP_MESSAGE"
           echo "Author: $AUTHOR"
           echo "Spring Version: $SPRING_VERSION"
       
