@@ -1,0 +1,16 @@
+on: push
+jobs:
+  encript_dataset:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Decrypt dataset
+        run: |
+          gpg --quiet --batch --yes \
+            --decrypt \
+            --passphrase="$DATASET_PASSPHRASE" \
+            --output dataset.json \
+            dataset.json.gpg
+        env:
+          DATASET_PASSPHRASE: ${{secrets.DATASET_PASSPHRASE}}
