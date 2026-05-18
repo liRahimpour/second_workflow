@@ -26,3 +26,8 @@ jobs:
         run: npm run build
       - name: Deploy
         run: echo "deploying..."
+  test_workflow_command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: debug-commadn
+        run: echo "hello world"
