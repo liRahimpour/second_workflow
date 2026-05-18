@@ -8,4 +8,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Scheduled run"
+      - run: echo "Scheduled run at $(date)"
+      - run: echo "Running nightly build at $(date)"
