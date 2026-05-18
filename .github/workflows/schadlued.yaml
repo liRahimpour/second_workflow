@@ -26,4 +26,4 @@ jobs:
           echo "Message: $STEP_MESSAGE" at $(date)"
           echo "Author: $AUTHOR"
           echo "Spring Version: $SPRING_VERSION"
-          echo "Current Date: $(date)"
+      
