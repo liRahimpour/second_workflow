@@ -26,4 +26,8 @@ jobs:
           echo "Message: $STEP_MESSAGE"
           echo "Author: $AUTHOR"
           echo "Spring Version: $SPRING_VERSION"
+
+      - name: ausserhalb_vorherige_step
+        run: |
+          echo "nichtgezeigt: $STEP_MESSAGE"
       
