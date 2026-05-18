@@ -12,5 +12,6 @@ jobs:
             --passphrase="$DATASET_PASSPHRASE" \
             --output dataset.json \
             dataset.json.gpg
+          ls
         env:
           DATASET_PASSPHRASE: ${{secrets.DATASET_PASSPHRASE}}
