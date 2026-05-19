@@ -1,0 +1,11 @@
+on:
+  issue_comment:
+    types:
+      - created
+
+jobs:
+  pr-comment:
+    if: ${{ github.event.issue.pull_request }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This was a comment on a pull request"
