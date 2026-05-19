@@ -8,4 +8,4 @@ jobs:
     if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This was a comment on a pull request"
+      - run: echo "This was a comment on a pull request."
